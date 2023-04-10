@@ -80,7 +80,9 @@
       }
       ````
 
+***
 ***ProductServlet [products.http](src/main/resources/products.http)***
+***
 
 * **GET findAll**
     * Пример request:
@@ -165,7 +167,7 @@
 * **POST save**
     * Пример request:
       ````
-      POST http://localhost:8080/products
+      http://localhost:8080/products
       ````
       Тело:
       ````
