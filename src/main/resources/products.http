@@ -1,0 +1,26 @@
+###findAll
+GET http://localhost:8080/products?pageNumber=1&pageSize=5
+Accept: application/json
+
+###findById
+GET http://localhost:8080/products?id=2
+Accept: application/json
+
+###save
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "quantity": 8,
+  "name": "Golden samovar",
+  "price": "100.99",
+  "promotion": false
+}
+
+###update
+PUT http://localhost:8080/products?id=2&quantity=15
+Content-Type: application/json
+
+###delete
+DELETE http://localhost:8080/products?id=6
+Content-Type: application/json

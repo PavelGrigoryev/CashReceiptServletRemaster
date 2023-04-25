@@ -1,0 +1,190 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-discount-card
+      author: Pavel Grigoryev
+      changes:
+        - createTable:
+            tableName: discount_card
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    unique: true
+              - column:
+                  name: discount_card_number
+                  type: varchar(30)
+                  constraints:
+                    unique: true
+                    nullable: false
+              - column:
+                  name: discount_percentage
+                  type: decimal
+                  constraints:
+                    nullable: false
+  - changeSet:
+      id: create-product
+      author: Pavel Grigoryev
+      changes:
+        - createTable:
+            tableName: product
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    unique: true
+              - column:
+                  name: name
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: price
+                  type: decimal
+                  constraints:
+                    nullable: false
+              - column:
+                  name: promotion
+                  type: boolean
+                  constraints:
+                    nullable: false
+              - column:
+                  name: quantity
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: total
+                  type: decimal
+                  constraints:
+                    nullable: false
+  - changeSet:
+      id: insert-into-discount-card
+      author: Pavel Grigoryev
+      changes:
+        - insert:
+            tableName: discount_card
+            columns:
+              - column:
+                  name: discount_card_number
+                  value: 1234
+              - column:
+                  name: discount_percentage
+                  valueNumeric: 7
+        - insert:
+            tableName: discount_card
+            columns:
+              - column:
+                  name: discount_card_number
+                  value: 5678
+              - column:
+                  name: discount_percentage
+                  valueNumeric: 3.5
+        - insert:
+            tableName: discount_card
+            columns:
+              - column:
+                  name: discount_card_number
+                  value: 9875
+              - column:
+                  name: discount_percentage
+                  valueNumeric: 10
+  - changeSet:
+      id: insert-into-product
+      author: Pavel Grigoryev
+      changes:
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: name
+                  value: Rock-drill Bosh
+              - column:
+                  name: price
+                  valueNumeric: 575.25
+              - column:
+                  name: promotion
+                  value: true
+              - column:
+                  name: quantity
+                  valueNumeric: 1
+              - column:
+                  name: total
+                  valueNumeric: 575.25
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: name
+                  value: Golden samovar
+              - column:
+                  name: price
+                  valueNumeric: 100.99
+              - column:
+                  name: promotion
+                  value: false
+              - column:
+                  name: quantity
+                  valueNumeric: 1
+              - column:
+                  name: total
+                  valueNumeric: 100.99
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: name
+                  value: Woolen gloves
+              - column:
+                  name: price
+                  valueNumeric: 30.89
+              - column:
+                  name: promotion
+                  value: true
+              - column:
+                  name: quantity
+                  valueNumeric: 1
+              - column:
+                  name: total
+                  valueNumeric: 30.89
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: name
+                  value: Edible noodles
+              - column:
+                  name: price
+                  valueNumeric: 7.41
+              - column:
+                  name: promotion
+                  value: true
+              - column:
+                  name: quantity
+                  valueNumeric: 1
+              - column:
+                  name: total
+                  valueNumeric: 7.41
+        - insert:
+            tableName: product
+            columns:
+              - column:
+                  name: name
+                  value: Revision hatch
+              - column:
+                  name: price
+                  valueNumeric: 50.73
+              - column:
+                  name: promotion
+                  value: true
+              - column:
+                  name: quantity
+                  valueNumeric: 1
+              - column:
+                  name: total
+                  valueNumeric: 50.73

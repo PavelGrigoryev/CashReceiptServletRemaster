@@ -1,0 +1,4 @@
+postgresql:
+  url: "jdbc:postgresql://localhost:5432/cash_receipt"
+  user: "enter your username here"
+  password: "enter your password here"
