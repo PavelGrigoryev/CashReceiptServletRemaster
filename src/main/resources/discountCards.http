@@ -1,13 +1,13 @@
 ###findAll
-GET http://localhost:8080/discountCards?pageNumber=1&pageSize=3
+GET http://localhost:8080/discount_cards?pageNumber=1&pageSize=3
 Accept: application/json
 
 ###findById
-GET http://localhost:8080/discountCards?id=2
+GET http://localhost:8080/discount_cards?id=2
 Accept: application/json
 
 ###save
-POST http://localhost:8080/discountCards
+POST http://localhost:8080/discount_cards
 Content-Type: application/json
 
 {
@@ -16,9 +16,9 @@ Content-Type: application/json
 }
 
 ###findByDiscountCardNumber
-GET http://localhost:8080/discountCards?discountCardNumber=5689
+GET http://localhost:8080/discount_cards?discountCardNumber=5689
 Accept: application/json
 
 ###delete
-DELETE http://localhost:8080/discountCards?id=4
+DELETE http://localhost:8080/discount_cards?id=4
 Content-Type: application/json

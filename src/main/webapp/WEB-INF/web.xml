@@ -8,6 +8,6 @@
          version="4.0">
     <error-page>
         <exception-type>ru.clevertec.cashreceipt.servletremaster.exception.AbstractException</exception-type>
-        <location>/exceptionHandler</location>
+        <location>/exception_handler</location>
     </error-page>
 </web-app>

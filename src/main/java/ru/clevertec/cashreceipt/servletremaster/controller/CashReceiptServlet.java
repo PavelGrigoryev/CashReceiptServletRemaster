@@ -10,7 +10,7 @@ import ru.clevertec.cashreceipt.servletremaster.service.impl.CashReceiptLogicSer
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(urlPatterns = "/cashReceipts")
+@WebServlet(urlPatterns = "/cash_receipts")
 public class CashReceiptServlet extends HttpServlet {
 
     private final transient CashReceiptLogicService cashReceiptLogicService = new CashReceiptLogicServiceImpl();

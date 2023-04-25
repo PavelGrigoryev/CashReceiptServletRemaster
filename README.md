@@ -47,7 +47,7 @@
 * **GET createCashReceipt**
     * Пример request:
       ````
-      http://localhost:8080/cashReceipts?idAndQuantity=3-6 2-6 1-7&discountCardNumber=9875
+      http://localhost:8080/cash_receipts?idAndQuantity=3-6 2-6 1-7&discountCardNumber=9875
       ````
     * Получаем чек, где idAndQuantity=3-6 2-6 1-7 discountCardNumber=9875 должны формировать чек
       содержащий продукт с id=3 и quantity из 6 продуктов, то же самое с id=2 и quantity из 6 продуктов,
@@ -239,7 +239,7 @@
 * **GET findAll**
     * Пример request:
       ````
-      http://localhost:8080/discountCards?pageNumber=1&pageSize=3
+      http://localhost:8080/discount_cards?pageNumber=1&pageSize=3
       ````
     * Находит все дисконтные карты с пагинацией, где pageNumber это номер страницы, а pageSize - размер страницы
     * Пример response:
@@ -271,7 +271,7 @@
 * **GET findById**
     * Пример request:
       ````
-      http://localhost:8080/discountCards?id=2
+      http://localhost:8080/discount_cards?id=2
       ````
     * Находит дисконтную карту по id
     * Пример response:
@@ -291,7 +291,7 @@
 * **POST save**
     * Пример request:
       ````
-      http://localhost:8080/discountCards
+      http://localhost:8080/discount_cards
       ````
       Тело:
       ````
@@ -312,7 +312,7 @@
 * **GET findByDiscountCardNumber**
     * Пример request:
       ````
-      http://localhost:8080/discountCards?discountCardNumber=5689
+      http://localhost:8080/discount_cards?discountCardNumber=5689
       ````
     * Находит дисконтную карту по discountCardNumber
     * Пример response:
@@ -332,7 +332,7 @@
 * **DELETE delete**
     * Пример request:
       ````
-      http://localhost:8080/discountCards?id=4
+      http://localhost:8080/discount_cards?id=4
       ````
     * Удаляет дисконтную карту по id
     * Пример response:

@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
-@WebServlet(urlPatterns = "/discountCards")
+@WebServlet(urlPatterns = "/discount_cards")
 public class DiscountCardServlet extends HttpServlet {
 
     private final transient DiscountCardService discountCardService = new DiscountCardServiceImpl();

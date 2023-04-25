@@ -13,7 +13,7 @@ import java.io.PrintWriter;
 import static jakarta.servlet.RequestDispatcher.ERROR_EXCEPTION;
 
 @Slf4j
-@WebServlet(urlPatterns = "/exceptionHandler")
+@WebServlet(urlPatterns = "/exception_handler")
 public class ExceptionHandlerServlet extends HttpServlet {
 
     @Override

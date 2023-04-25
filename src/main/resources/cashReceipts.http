@@ -1,3 +1,3 @@
 ###createCashReceipt
-GET http://localhost:8080/cashReceipts?idAndQuantity=3-6 2-6 1-7&discountCardNumber=9875
+GET http://localhost:8080/cash_receipts?idAndQuantity=3-6 2-6 1-7&discountCardNumber=9875
 Accept: application/json

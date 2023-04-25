@@ -12,7 +12,7 @@ import ru.clevertec.cashreceipt.servletremaster.exception.InvalidInputException;
 
 import java.io.IOException;
 
-@WebFilter(urlPatterns = "/discountCards")
+@WebFilter(urlPatterns = "/discount_cards")
 public class DiscountCardFilter implements Filter {
 
     @Override
