@@ -1,0 +1,24 @@
+###findAll
+GET http://localhost:8080/discount_cards?pageNumber=1&pageSize=3
+Accept: application/json
+
+###findById
+GET http://localhost:8080/discount_cards?id=2
+Accept: application/json
+
+###save
+POST http://localhost:8080/discount_cards
+Content-Type: application/json
+
+{
+  "discountCardNumber": "5689",
+  "discountPercentage": 6
+}
+
+###findByDiscountCardNumber
+GET http://localhost:8080/discount_cards?discountCardNumber=5689
+Accept: application/json
+
+###delete
+DELETE http://localhost:8080/discount_cards?id=4
+Content-Type: application/json
